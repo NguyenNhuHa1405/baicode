@@ -1,0 +1,23 @@
+#include<iostream.h>
+using namespace std;
+long long gcd(long long a,long long b){
+	if(b==0)return a;
+	return gcd(b, a%b);
+}
+long long lcd(long long a, long long b){
+	return a/gcd(a,b)*b;
+}
+class SinhVien
+{
+	private:
+	string ma, ten, ns;
+	float gpa;
+	public:
+	SinhVien();
+	
+};
+int main()
+{
+	
+	return 0;
+}

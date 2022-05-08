@@ -1,0 +1,10 @@
+#include<iostream.h>
+using namespace std;
+class KH{
+	private:
+	char ht[30];
+	 
+}
+int main(){
+	return 0;
+}
