@@ -1,6 +1,4 @@
-#include<iostream.h>
-#include<iomanip>
-#include<math.h>
+#include<bits/stdc++.h>
 using namespace std;
 class giaovien;
 class sinhvien;
@@ -29,6 +27,7 @@ class sinhvien
 	friend void chuanhoa(sinhvien&);
 	friend istream& operator >> (istream& in, sinhvien& a);
 	friend ostream& operator << (ostream &out, sinhvien a);
+	bool operator <(sinhvien a);
 	friend bool operator < (sinhvien a, sinhvien b);
 };
 bool operator < (sinhvien a, sinhvien b)
@@ -98,15 +97,16 @@ int main()
 {
 	int n; cin>>n;
 	sinhvien a[n];
-
 	for(int i=0;i<n;i++)
 	{
 		cin>>a[i];
 	}
 	sort(a,a+n);
-	for(sinhvien d:a)
+	for(sinhvien x:a)
 	{
-		cout<<c;
+		cout<<x;
 	}
-
+	
+	
+	return 0;
 }
